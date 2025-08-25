@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://c56oga66aa10d"]
+[gd_scene load_steps=22 format=3 uid="uid://c56oga66aa10d"]
 
 [ext_resource type="Script" path="res://script/ProBrunch.gd" id="1_57v81"]
 [ext_resource type="Texture2D" uid="uid://deqxuonoaotpf" path="res://brunchpro/PNG/pixil-frame-0.png" id="2_n34ga"]
@@ -82,7 +82,12 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="ProBrunch" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_72b1v"]
+size = Vector2(102, 55)
+
+[node name="ProBrunch" type="Area2D"]
+collision_layer = 32
+collision_mask = 12
 script = ExtResource("1_57v81")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -91,3 +96,7 @@ animation = &"ProBrunch"
 frame = 17
 frame_progress = 1.0
 speed_scale = 2.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(6, 29.5)
+shape = SubResource("RectangleShape2D_72b1v")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://dapy6juup73bn"]
+[gd_scene load_steps=24 format=3 uid="uid://dapy6juup73bn"]
 
 [ext_resource type="Texture2D" uid="uid://5a4l7o22u0pk" path="res://DarkForest1.2/env_ground.png" id="1_ofljb"]
 [ext_resource type="Texture2D" uid="uid://v2t6ts7ui6l1" path="res://DarkForest1.2/env_rock.png" id="2_ejlji"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bpvpfv3oer4r0" path="res://sun.png" id="11_88h5i"]
 [ext_resource type="Texture2D" uid="uid://xttvihmmusnu" path="res://basic_circle.png" id="12_w3r7l"]
 [ext_resource type="PackedScene" uid="uid://brryxf2il7pck" path="res://scene/animals.tscn" id="13_4h4sb"]
+[ext_resource type="PackedScene" uid="uid://cqihh56dlssje" path="res://scene/goblin.tscn" id="14_qdmy2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h1e2k"]
 texture = ExtResource("1_ofljb")
@@ -7364,3 +7365,6 @@ color = Color(0.165656, 0.165656, 0.165656, 1)
 
 [node name="AnimatedSprite2D" parent="." instance=ExtResource("13_4h4sb")]
 position = Vector2(39, 540)
+
+[node name="Goblin" parent="." instance=ExtResource("14_qdmy2")]
+position = Vector2(790, 449)

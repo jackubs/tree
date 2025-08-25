@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://b5dopdev81wd2"]
+[gd_scene load_steps=17 format=3 uid="uid://b5dopdev81wd2"]
 
 [ext_resource type="Script" path="res://script/deer_attack.gd" id="1_iqrkh"]
 [ext_resource type="Texture2D" uid="uid://cttrj4mv2eoot" path="res://DearAttack/PNG/pixil-frame-0.png" id="1_xk50d"]
@@ -62,10 +62,22 @@ animations = [{
 "speed": 8.0
 }]
 
-[node name="DearAttack" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ta4hq"]
+size = Vector2(119, 120)
+
+[node name="DeerAttack" type="Area2D"]
+collision_layer = 32
+collision_mask = 12
 script = ExtResource("1_iqrkh")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_i8evd")
 animation = &"DeerAttack"
+frame = 12
+frame_progress = 1.0
 speed_scale = 1.5
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(27.5, 52)
+shape = SubResource("RectangleShape2D_ta4hq")
