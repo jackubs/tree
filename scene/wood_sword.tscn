@@ -1,0 +1,125 @@
+[gd_scene load_steps=29 format=3 uid="uid://ch81j71ymbetb"]
+
+[ext_resource type="Script" path="res://script/WoodSword.gd" id="1_sxida"]
+[ext_resource type="Texture2D" uid="uid://difigwm3yotfl" path="res://WoodSword/pixil-frame-0.png" id="2_jp0rg"]
+[ext_resource type="Texture2D" uid="uid://dgnphb8l0dmq5" path="res://WoodSword/pixil-frame-1.png" id="3_si3ov"]
+[ext_resource type="Texture2D" uid="uid://bwxekptswpjgw" path="res://WoodSword/pixil-frame-2.png" id="4_0kf2b"]
+[ext_resource type="Texture2D" uid="uid://c5exqe7berc5k" path="res://WoodSword/pixil-frame-3.png" id="5_nbogk"]
+[ext_resource type="Texture2D" uid="uid://bf62c4ubcevmx" path="res://WoodSword/pixil-frame-4.png" id="6_t3kki"]
+[ext_resource type="Texture2D" uid="uid://c0ikmju6muepx" path="res://WoodSword/pixil-frame-5.png" id="7_8vyi6"]
+[ext_resource type="Texture2D" uid="uid://d17f621ods30c" path="res://WoodSword/pixil-frame-6.png" id="8_fvfg4"]
+[ext_resource type="Texture2D" uid="uid://cbljb3eefwvun" path="res://WoodSword/pixil-frame-7.png" id="9_aapgp"]
+[ext_resource type="Texture2D" uid="uid://45joryccdd40" path="res://WoodSword/pixil-frame-8.png" id="10_vphm7"]
+[ext_resource type="Texture2D" uid="uid://ccg6p74dgknpo" path="res://WoodSword/pixil-frame-9.png" id="11_dhpom"]
+[ext_resource type="Texture2D" uid="uid://cjj7mtra0u4yb" path="res://WoodSword/pixil-frame-10.png" id="12_mcshy"]
+[ext_resource type="Texture2D" uid="uid://5mycxmiv7cen" path="res://WoodSword/pixil-frame-11.png" id="13_fqhby"]
+[ext_resource type="Texture2D" uid="uid://da84c7inlbi1" path="res://WoodSword/pixil-frame-12.png" id="14_8ply1"]
+[ext_resource type="Texture2D" uid="uid://h571cyv204qm" path="res://WoodSword/pixil-frame-13.png" id="15_2th4b"]
+[ext_resource type="Texture2D" uid="uid://da7sydo5on8mh" path="res://WoodSword/pixil-frame-14.png" id="16_nb245"]
+[ext_resource type="Texture2D" uid="uid://btu214m3cgmvh" path="res://WoodSword/pixil-frame-15.png" id="17_tuqih"]
+[ext_resource type="Texture2D" uid="uid://6ghtxvlheov" path="res://WoodSword/pixil-frame-16.png" id="18_b6muu"]
+[ext_resource type="Texture2D" uid="uid://cbfvt1gwm7vmy" path="res://WoodSword/pixil-frame-17.png" id="19_prybn"]
+[ext_resource type="Texture2D" uid="uid://bd11bl83puh8a" path="res://WoodSword/pixil-frame-18.png" id="20_uy1sy"]
+[ext_resource type="Texture2D" uid="uid://60lt5lncujxg" path="res://WoodSword/pixil-frame-19.png" id="21_tjdva"]
+[ext_resource type="Texture2D" uid="uid://cwqykna874fsx" path="res://WoodSword/pixil-frame-20.png" id="22_2o4ic"]
+[ext_resource type="Texture2D" uid="uid://cbkwmgfhacblv" path="res://WoodSword/pixil-frame-21.png" id="23_qv6lk"]
+[ext_resource type="Texture2D" uid="uid://cqdk5gu6y8208" path="res://WoodSword/pixil-frame-22.png" id="24_urifg"]
+[ext_resource type="Texture2D" uid="uid://b3o12kdwbmf01" path="res://WoodSword/pixil-frame-23.png" id="25_lvona"]
+[ext_resource type="Texture2D" uid="uid://clqmo5sdv6h46" path="res://WoodSword/pixil-frame-24.png" id="26_ebkkg"]
+[ext_resource type="Texture2D" uid="uid://c6eirhayqqbyf" path="res://WoodSword/pixil-frame-25.png" id="27_rdc2w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mp787"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_jp0rg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_si3ov")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0kf2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_nbogk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_t3kki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_8vyi6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_fvfg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_aapgp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_vphm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_dhpom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mcshy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_fqhby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_8ply1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_2th4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nb245")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tuqih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_b6muu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_prybn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_uy1sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_tjdva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2o4ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qv6lk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_urifg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_lvona")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ebkkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rdc2w")
+}],
+"loop": false,
+"name": &"WoodSwordAttack",
+"speed": 10.0
+}]
+
+[node name="WoodSword" type="Node2D"]
+script = ExtResource("1_sxida")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mp787")
+animation = &"WoodSwordAttack"
+frame = 25
+frame_progress = 1.0
+speed_scale = 1.5

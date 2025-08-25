@@ -1,0 +1,71 @@
+[gd_scene load_steps=16 format=3 uid="uid://b5dopdev81wd2"]
+
+[ext_resource type="Script" path="res://script/deer_attack.gd" id="1_iqrkh"]
+[ext_resource type="Texture2D" uid="uid://cttrj4mv2eoot" path="res://DearAttack/PNG/pixil-frame-0.png" id="1_xk50d"]
+[ext_resource type="Texture2D" uid="uid://b7jysii248ve8" path="res://DearAttack/PNG/pixil-frame-1.png" id="2_s7hia"]
+[ext_resource type="Texture2D" uid="uid://cjuqf0ic7u4hh" path="res://DearAttack/PNG/pixil-frame-2.png" id="3_eh0rh"]
+[ext_resource type="Texture2D" uid="uid://g1n41rstm6yt" path="res://DearAttack/PNG/pixil-frame-3.png" id="4_dvyqe"]
+[ext_resource type="Texture2D" uid="uid://ciicik4oicejm" path="res://DearAttack/PNG/pixil-frame-4).png" id="5_7q1w4"]
+[ext_resource type="Texture2D" uid="uid://dg632ld3p6jad" path="res://DearAttack/PNG/pixil-frame-5.png" id="6_723qa"]
+[ext_resource type="Texture2D" uid="uid://dt1wre2nnuoaq" path="res://DearAttack/PNG/pixil-frame-6.png" id="7_jm2s2"]
+[ext_resource type="Texture2D" uid="uid://cotduirhr0rs4" path="res://DearAttack/PNG/pixil-frame-7.png" id="8_gym3y"]
+[ext_resource type="Texture2D" uid="uid://b0xrnb5qe3n5r" path="res://DearAttack/PNG/pixil-frame-8.png" id="9_x27qv"]
+[ext_resource type="Texture2D" uid="uid://cllf618i4hgsx" path="res://DearAttack/PNG/pixil-frame-9.png" id="10_1xqn3"]
+[ext_resource type="Texture2D" uid="uid://ctqtx46j4wbus" path="res://DearAttack/PNG/pixil-frame-10.png" id="11_eaaod"]
+[ext_resource type="Texture2D" uid="uid://bkesuihoddfbr" path="res://DearAttack/PNG/pixil-frame-11.png" id="12_yevr0"]
+[ext_resource type="Texture2D" uid="uid://ckfxly6cc3lid" path="res://DearAttack/PNG/pixil-frame-12.png" id="13_shkwr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i8evd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xk50d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s7hia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_eh0rh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dvyqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_7q1w4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_723qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jm2s2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_gym3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x27qv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1xqn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_eaaod")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_yevr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_shkwr")
+}],
+"loop": false,
+"name": &"DeerAttack",
+"speed": 8.0
+}]
+
+[node name="DearAttack" type="Node2D"]
+script = ExtResource("1_iqrkh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_i8evd")
+animation = &"DeerAttack"
+speed_scale = 1.5

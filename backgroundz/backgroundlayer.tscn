@@ -1,0 +1,118 @@
+[gd_scene load_steps=10 format=3 uid="uid://c8vhpeowxofwt"]
+
+[ext_resource type="Texture2D" uid="uid://dpkevyo1uo5v5" path="res://PixelPlatformerSet2v.1.1/Background/background1.png" id="1_q45gd"]
+[ext_resource type="Texture2D" uid="uid://cldbssjt08xtk" path="res://PixelPlatformerSet2v.1.1/Background/background2.png" id="2_631cn"]
+[ext_resource type="Texture2D" uid="uid://q2q564105ovu" path="res://PixelPlatformerSet2v.1.1/Background/background3.png" id="3_84k5c"]
+[ext_resource type="Texture2D" uid="uid://bpvpfv3oer4r0" path="res://sun.png" id="3_i3lf4"]
+[ext_resource type="Texture2D" uid="uid://dw0e0vvphbim7" path="res://PixelPlatformerSet2v.1.1/Background/background4.png" id="4_1vw16"]
+[ext_resource type="Texture2D" uid="uid://xttvihmmusnu" path="res://basic_circle.png" id="4_17d7c"]
+[ext_resource type="Texture2D" uid="uid://dvtfibcg6o7e3" path="res://PixelPlatformerSet2v.1.1/Background/background5.png" id="5_7sdn3"]
+[ext_resource type="Texture2D" uid="uid://ddw7akwx7bewn" path="res://PixelPlatformerSet2v.1.1/Background/background6.png" id="6_y5qmu"]
+[ext_resource type="Material" uid="uid://bdfu7ga8tpfc4" path="res://wind_sway.tres" id="7_lnf1q"]
+
+[node name="backgroundlayer" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(576, 324)
+scale = Vector2(3.203, 2)
+texture = ExtResource("1_q45gd")
+
+[node name="ParallaxBackground8" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(1, 1)
+scroll_base_offset = Vector2(0.5, 0)
+scroll_ignore_camera_zoom = true
+
+[node name="Parallax2D" type="Parallax2D" parent="ParallaxBackground8"]
+scroll_offset = Vector2(0.2, 0.2)
+ignore_camera_scroll = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground8/Parallax2D"]
+material = ExtResource("7_lnf1q")
+position = Vector2(478.4, 177.4)
+scale = Vector2(4.7125, 4.65)
+texture = ExtResource("3_i3lf4")
+
+[node name="PointLight2D" type="PointLight2D" parent="ParallaxBackground8/Parallax2D/Sprite2D"]
+position = Vector2(6.30302, 6.54545)
+scale = Vector2(4.65009, 4.52178)
+color = Color(1, 1, 0.67451, 1)
+texture = ExtResource("4_17d7c")
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground2/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(577.5, 323.5)
+scale = Vector2(3.203, 2)
+texture = ExtResource("2_631cn")
+
+[node name="ParallaxBackground3" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground3"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground3/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(576, 325)
+scale = Vector2(3.203, 2)
+texture = ExtResource("3_84k5c")
+
+[node name="ParallaxBackground4" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground4"]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground4/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(576.5, 326)
+scale = Vector2(3.203, 2)
+texture = ExtResource("4_1vw16")
+
+[node name="ParallaxBackground5" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground5"]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground5/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(576, 325.5)
+scale = Vector2(3.203, 2)
+texture = ExtResource("5_7sdn3")
+
+[node name="ParallaxBackground6" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground6"]
+motion_scale = Vector2(0.8, 0.8)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground6/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(578.5, 324.5)
+scale = Vector2(3.203, 2)
+texture = ExtResource("6_y5qmu")
+
+[node name="ParallaxBackground7" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground7"]
+motion_scale = Vector2(0.6, 0.6)
+motion_mirroring = Vector2(1363, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground7/ParallaxLayer"]
+modulate = Color(0.377924, 1, 0.979993, 1)
+position = Vector2(1937, 327)
+rotation = -3.14159
+scale = Vector2(3.203, 2)
+texture = ExtResource("6_y5qmu")

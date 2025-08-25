@@ -1,0 +1,86 @@
+[gd_scene load_steps=19 format=3 uid="uid://c6ddo4yi5fh64"]
+
+[ext_resource type="Script" path="res://script/WoodSpikeAttack.gd" id="1_ls3af"]
+[ext_resource type="Texture2D" uid="uid://316k5t10ydwu" path="res://WoodSpkieAttack/pixil-frame-0.png" id="2_ppn84"]
+[ext_resource type="Texture2D" uid="uid://dpt1ejuefosye" path="res://WoodSpkieAttack/pixil-frame-1.png" id="3_fsmpi"]
+[ext_resource type="Texture2D" uid="uid://ncogb04cfbaa" path="res://WoodSpkieAttack/pixil-frame-2.png" id="4_rbquc"]
+[ext_resource type="Texture2D" uid="uid://dwlytu3l827jf" path="res://WoodSpkieAttack/pixil-frame-3.png" id="5_2t4sb"]
+[ext_resource type="Texture2D" uid="uid://d1ti7dw10c183" path="res://WoodSpkieAttack/pixil-frame-4.png" id="6_48p0e"]
+[ext_resource type="Texture2D" uid="uid://dr4vnkdmhf13a" path="res://WoodSpkieAttack/pixil-frame-5.png" id="7_3ri66"]
+[ext_resource type="Texture2D" uid="uid://cuts5sshosi5w" path="res://WoodSpkieAttack/pixil-frame-6.png" id="8_mixil"]
+[ext_resource type="Texture2D" uid="uid://ctag3fmn1rq6c" path="res://WoodSpkieAttack/pixil-frame-7.png" id="9_aodot"]
+[ext_resource type="Texture2D" uid="uid://2gx7axis5j71" path="res://WoodSpkieAttack/pixil-frame-8.png" id="10_ehikc"]
+[ext_resource type="Texture2D" uid="uid://daywjl3klc1m2" path="res://WoodSpkieAttack/pixil-frame-9.png" id="11_mnf0s"]
+[ext_resource type="Texture2D" uid="uid://dyoc1ntu35pb3" path="res://WoodSpkieAttack/pixil-frame-10.png" id="12_d3fis"]
+[ext_resource type="Texture2D" uid="uid://bqeoso4nwglkn" path="res://WoodSpkieAttack/pixil-frame-11.png" id="13_vpw4i"]
+[ext_resource type="Texture2D" uid="uid://c8e3tgsds7idi" path="res://WoodSpkieAttack/pixil-frame-12.png" id="14_avvcx"]
+[ext_resource type="Texture2D" uid="uid://cfy86xc1jyfh8" path="res://WoodSpkieAttack/pixil-frame-13.png" id="15_opgvr"]
+[ext_resource type="Texture2D" uid="uid://clpt2tif0cups" path="res://WoodSpkieAttack/pixil-frame-14.png" id="16_ub3hp"]
+[ext_resource type="Texture2D" uid="uid://dmgldhfrj78r2" path="res://WoodSpkieAttack/pixil-frame-15.png" id="17_ux46w"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ng655"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ppn84")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fsmpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rbquc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2t4sb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_48p0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3ri66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_mixil")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_aodot")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ehikc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_mnf0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d3fis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_vpw4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_avvcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_opgvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ub3hp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ux46w")
+}],
+"loop": false,
+"name": &"WoodSpikeAttack",
+"speed": 10.0
+}]
+
+[node name="WoodSpikeAttack" type="Node2D"]
+script = ExtResource("1_ls3af")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_ng655")
+animation = &"WoodSpikeAttack"
+frame = 15
+frame_progress = 1.0
+speed_scale = 1.5
